@@ -16,10 +16,17 @@ use Illuminate\Support\Facades\Route;
 //     return view("admin.master.index");
 // });
 
+Route::get('/', function () {
+    return view('admin.login.auth.login');
+});
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
+
+
 
 Route::get('/alumni', [App\Http\Controllers\AlumniController::class, 'index'])->name('admin.dataalumni.alumni');
 Route::get('/alumni/create', [App\Http\Controllers\AlumniController::class, 'create'])->name('admin.alumni.create');

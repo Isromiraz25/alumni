@@ -143,9 +143,9 @@
                     <li>
                         <a href="{{ route('admin.siswa.siswa') }}" class="active"><i class="fa fa-users" aria-hidden="true"></i> Siswa Baru</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="{{ route('admin.saran.index') }}" class="active"><i class="fa fa-envelope" aria-hidden="true"></i> Saran</a>
-                    </li>
+                    </li> --}}
 
                     <li>
                         <a href="{{ route('admin.youtube.index') }}" class="active"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
