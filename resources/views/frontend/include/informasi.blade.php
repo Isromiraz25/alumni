@@ -355,9 +355,9 @@
                                     <thead>
                                         <th class="text-info">no</th>
                                         <!-- <th class="text-info">id</th> -->
-                                        <th class="text-info">Nama_angkatan</th>
-                                        <th class="text-info">Total</th>
-                                        <th class="text-info">Detail</th>
+                                        <th class="text-info">Name_generation</th>
+                                        <th class="text-info">Amount</th>
+                                        <th class="text-info">Details</th>
                                     </thead>
                                     <tbody>
                                 @php
@@ -388,8 +388,9 @@
                                             <tr>
                                                 <th class="text-info">No</th>
                                                 <th class="text-info">Name</th>
+                                                <th class="text-info">place of birth</th>
                                                 <th class="text-info">Photo</th>
-                                                <th class="text-info">Detail</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -398,11 +399,11 @@
                                                 <tr>
                                                     <th scope="row">{{ $no++ }}</th>
                                                     <td>{{ $item->name }}</td>
-                                                    
+                                                    <td>{{ $item->tempat_lahir }}</td>
                                                     <th>
                                                         <img src="{{ asset($item->photo) }}" alt="" style="width: 40px;">
                                                     </th>
-                                                    <th scope="row" class="btn-sx btn-show-siswa"data-id="{{ $item->id }}"><i class="fa fa-eye" aria-hidden="true"></i></th>
+                                                    
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -424,10 +425,10 @@
                     <thead>
                       <tr>
                         <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Agama</th>
-                        <th scope="col">Jenis Kelamin</th>
-                        <th scope="col">Tahun Lulus</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Religion</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Graduation year</th>
                         <th scope="col">Photo</th>
 
                       </tr>
@@ -448,38 +449,7 @@
 
 
 
-    <div class="modal fade" id="showAllSiswa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="showAllSiswa">Data Siswa</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <table class="table show-table" id="myTable">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Alamat</th>
-                        <th scope="col">Jenis Kelamin</th>
-                        <th scope="col">Photo</th>
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-    </div>
+  
                        
 
 

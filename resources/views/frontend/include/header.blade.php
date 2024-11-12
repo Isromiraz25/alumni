@@ -102,7 +102,7 @@
                     <form action="{{route('siswa-store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                       <div class="form-group">
-                        <label for="nama">Nama:</label>
+                        <label for="nama">Name:</label>
                         <input type="text" class="form-control" id="nama" name="nama" required>
                       </div>
 
@@ -112,30 +112,30 @@
                       </div>
 
                       <div class="form-group">
-                        <label for="alamat">Alamat:</label>
+                        <label for="alamat">Address:</label>
                         <textarea id="alamat" class="form-control" name="alamat" required></textarea>
                       </div>
 
                       <div class="form-group">
-                        <label for="telepon">Telepon:</label>
+                        <label for="telepon">Telephone:</label>
                         <input type="tel" class="form-control" id="telepon" name="no_tlp" required>
                       </div>
 
                       <div class="form-group">
-                        <label for="jenis_kelamin">Jenis Kelamin:</label>
+                        <label for="jenis_kelamin">Gender:</label>
                         <select id="jenis_kelamin" class="form-control" name="jenis_kelamin" required>
-                          <option value="laki-laki">Laki-laki</option>
-                          <option value="perempuan">Perempuan</option>
+                          <option value="laki-laki">male</option>
+                          <option value="perempuan">female</option>
                         </select>
                       </div>
 
                       <div class="form-group">
-                        <label for="tempat_lahir">Tempat Lahir:</label>
+                        <label for="tempat_lahir">Place of birth:</label>
                         <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required>
                       </div>
 
                       <div class="form-group">
-                        <label for="tanggal_lahir">Tanggal Lahir:</label>
+                        <label for="tanggal_lahir">date of birth:</label>
                         <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required>
                       </div>
 
@@ -144,7 +144,7 @@
                         <input class="form-control" name="ijazah" type="file" id="formFile">
                       </div>
                       <div class="mb-4">
-                        <label for="formFile" class="form-label">Kartu keluarga</label>
+                        <label for="formFile" class="form-label">Family card</label>
                         <input class="form-control" name="kk" type="file" id="formFile">
                       </div>
                       <div class="mb-4">
@@ -152,7 +152,7 @@
                         <input class="form-control" name="photo" type="file" id="formFile">
                       </div>
 
-                      <button type="submit" class="btn btn-primary">Daftar</button>
+                      <button type="submit" class="btn btn-primary">Register</button>
                     </form>
                 </div>
 

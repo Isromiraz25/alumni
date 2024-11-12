@@ -142,7 +142,8 @@ Route::get('/frontsarans', [App\Http\Controllers\TempletSaranController::class, 
 
 Route::get('/frontguru', [App\Http\Controllers\TempletguruController::class, 'frontguru'])->name('frontend.include.guru');
 Route::get('/get-data-alumni/{id}', [App\Http\Controllers\HomeController::class, 'getDataAlumin']);
-Route::get('/get-data-siswa/{id}', [App\Http\Controllers\HomeController::class, 'getDataSiswa']);
+
+
 
 
 

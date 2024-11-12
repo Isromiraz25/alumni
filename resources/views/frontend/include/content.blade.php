@@ -358,9 +358,9 @@
                                     <thead>
                                         <th class="text-info">no</th>
                                         <!-- <th class="text-info">id</th> -->
-                                        <th class="text-info">Nama_angkatan</th>
-                                        <th class="text-info">Total</th>
-                                        <th class="text-info">Detail</th>
+                                        <th class="text-info">Name_generation</th>
+                                        <th class="text-info">Amount</th>
+                                        <th class="text-info">Details</th>
                                     </thead>
                                     <tbody>
                                 @php
@@ -395,10 +395,10 @@
                     <thead>
                       <tr>
                         <th scope="col">No</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Agama</th>
-                        <th scope="col">Jenis Kelamin</th>
-                        <th scope="col">Tahun Lulus</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Religion</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Graduation year</th>
                         <th scope="col">Photo</th>
 
                       </tr>
@@ -426,7 +426,7 @@
                       <tr>
                           <th class="text-info">No</th>
                           <th class="text-info">Name</th>
-                          <th class="text-info">tempat_lahir</th>
+                          <th class="text-info">place of birth</th>
                           <th class="text-info">Photo</th>
                       </tr>
                   </thead>
