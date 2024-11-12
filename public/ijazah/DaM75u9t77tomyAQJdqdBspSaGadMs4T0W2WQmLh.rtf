@@ -1,0 +1,1286 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red85\green85\blue85;\red170\green64\blue64;\red9\green118\blue72;}
+\viewkind4\uc1\pard\f0\fs20 login as: avatar\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v22.1 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u11166? SSH session to \cf5 avatar@34.126.150.45                      \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0\u10003?\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0\u10003?\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0\u10003?\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0\u10003?\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u11166? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-67-generic x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Fri May 12 02:28:52 AM UTC 2023\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  1.16015625         Temperature:           34.0 C\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   25.2% of 56.88GB   Processes:             385\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 21%                Users logged in:       1\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                 IPv4 address for eno1: 192.168.1.22\cf1\highlight2 
+\par 
+\par \cf0\highlight0   => There is 1 zombie process.\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s\cf1\highlight2 
+\par \cf0\highlight0    just raised the bar for easy, resilient and secure K8s cluster deployment.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/engage/secure-kubernetes-at-the-edge\cf1\highlight2 
+\par 
+\par \cf0\highlight0 74 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 *** System restart required ***\cf1\highlight2 
+\par \cf0\highlight0 Last login: Fri May 12 02:25:00 2023 from 127.0.0.1\cf1\highlight2 
+\par \cf0\highlight0 avatar@water:~$ pm2 log mBanking\cf1\highlight2 
+\par \cf7\highlight0 [TAILING] Tailing last 15 lines for [mBanking] process (change the value with --lines option)\cf1\highlight2 
+\par \cf7\highlight0 /home/avatar/.pm2/logs/mbanking-error.log last 15 lines:\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0 2023-05-12T02:22:00.636Z ERROR webdriver: unknown error: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at getErrorFromResponseBody (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:198:12)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at NodeJSRequest._request (/home/avatar/mbanking-automation/node_modules/webdriver/build/request/index.js:166:60)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at async startWebDriverSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:68:20)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at async WebDriver.newSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/index.js:46:45)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at async remote (/home/avatar/mbanking-automation/node_modules/webdriverio/build/index.js:78:22)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0 2023-05-12T02:23:34.291Z ERROR webdriver: Request failed with status 500 due to unknown error: An unknown server-side error occurred while processing the command. Original error: Device 10.10.1.5:5555 was not in the list of connected devices\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0 2023-05-12T02:23:34.292Z ERROR webdriver: unknown error: An unknown server-side error occurred while processing the command. Original error: Device 10.10.1.5:5555 was not in the list of connected devices\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at getErrorFromResponseBody (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:198:12)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at NodeJSRequest._request (/home/avatar/mbanking-automation/node_modules/webdriver/build/request/index.js:166:60)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at async startWebDriverSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:68:20)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at async WebDriver.newSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/index.js:46:45)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking | \cf0     at async remote (/home/avatar/mbanking-automation/node_modules/webdriverio/build/index.js:78:22)\cf1\highlight2 
+\par 
+\par \cf7\highlight0 /home/avatar/.pm2/logs/mbanking-out.log last 15 lines:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 Mutasi Mandiri 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 Transfer Success BCA 10.10.1.150:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 Transfer Callback 10.10.1.150:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0   account: '0263346359',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking | \cf0 Mutasi Mandiri 10.10.1.169:5555\cf1\highlight2 
+\par 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.82:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.40:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Mandiri 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.72:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success BCA 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '2740487348',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.1.43:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.148:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.134:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 11 | 10.10.1.82:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.150:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 4 | 10.10.1.42:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 3 | 10.10.2.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.42:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 20 | 10.10.1.43:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success BCA 10.10.1.203:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.1.203:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '7751378797',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 19 | 10.10.1.148:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 1 | 10.10.1.3:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.82:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.3:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 22 | 10.10.1.43:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.148:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 22 | 10.10.0.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.43:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.134:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.40:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.203:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Mandiri 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.87:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.34:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 20 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.26:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 409.969,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.169:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 5 | 10.10.2.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.83:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 18 | 10.10.1.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 12 | 10.10.1.169:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 35 | 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.36:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.124:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 3 | 10.10.0.134:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.134:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 32 | 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.169:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.17:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.83:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.73:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Mandiri 10.10.2.26:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Gagal Transfer BCA Device 10.10.2.110:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Authorize Timeout\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.2.110:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1801659956',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 2,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Authorize Timeout'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error BRI 10.10.1.87:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 device forced close, please try again #LGN001\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 280.961,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Register BCA Account 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 6 | 10.10.2.40:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success Mandiri 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'mandiri',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'PERMATA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1430028101929',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.124:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.110:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error BRI 10.10.1.34:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 device forced close, please try again #LGN001\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Register BCA Account 10.10.1.210:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.40:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.88:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 5 | 10.10.1.83:5555\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0 2023-05-12T02:30:01.950Z ERROR webdriver: Request failed with status 500 due to unknown error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/usr/lib/android-sdk/platform-tools/adb -P 5038 -s 10.10.0.225\\:5555 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0 2023-05-12T02:30:01.951Z ERROR webdriver: unknown error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/usr/lib/android-sdk/platform-tools/adb -P 5038 -s 10.10.0.225\\:5555 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at getErrorFromResponseBody (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:198:12)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at NodeJSRequest._request (/home/avatar/mbanking-automation/node_modules/webdriver/build/request/index.js:166:60)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at async startWebDriverSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:68:20)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at async WebDriver.newSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/index.js:46:45)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at async remote (/home/avatar/mbanking-automation/node_modules/webdriverio/build/index.js:78:22)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 sudo lsof -t -i:25158\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ===================PID=========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stdout:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stderr:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 exec error: Error: Command failed: sudo lsof -t -i:25158\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.22:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 6 | 10.10.2.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.83:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ===================KILL PORT=========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error: Command failed: sudo lsof -t -i:25158\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess.exithandler (node:child_process:419:12)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess.emit (node:events:513:28)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess.emit (node:domain:489:12)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at maybeClose (node:internal/child_process:1091:16)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess._handle.onexit (node:internal/child_process:302:5) \{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   code: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   killed: false,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   signal: null,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   cmd: 'sudo lsof -t -i:25158'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Removing UiAutomator2 AdbPort 5038\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stdout: already connected to 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stderr:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.17:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Mandiri 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 25 | 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.37:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.88:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.53:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.39:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success Mandiri 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'mandiri',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1460017732913',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 2 | 10.10.1.124:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.22:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.98:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.177:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.124:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 62.360,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.76:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.37:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 28 | 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 6 | 10.10.2.17:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.71:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.98:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.56:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 6 | 10.10.1.88:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.17:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.88:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.39:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.76:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.129:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Mandiri 10.10.0.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.48:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 7 | 10.10.2.22:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success BCA 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '2740487348',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success Mandiri 10.10.2.26:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'mandiri',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BRI',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1440023465914',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.71:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.26:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 7 | 10.10.2.22:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 1\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 3\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 6 | 10.10.1.98:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.37:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success Mandiri 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'mandiri',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BRI',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1410023356785',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.22:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Register BCA Account 10.10.1.177:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.76:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 10 | 10.10.1.98:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.48:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.39:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 13 | 10.10.2.37:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.76:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.98:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.120:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.37:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.2.39:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.71:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 18 | 10.10.0.76:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 37 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.2.39:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 11 | 10.10.0.71:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.76:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 43 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.54:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.39:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 50 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.71:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.0.238:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 55 | 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.129:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 345.400,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.173:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.48:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.57:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.64:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Success Register BCA Account 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.165:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 2 | 10.10.1.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error BRI 10.10.2.114:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 device forced close, please try again #LGN001\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.48:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.129:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.33:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.120:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 667.703,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Gagal Transfer Mandiri 10.10.0.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Authorize Timeout\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'mandiri',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'PERMATA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1420021265557',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 2,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Authorize Timeout'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 18 | 10.10.0.48:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.212:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0 2023-05-12T02:31:45.678Z ERROR webdriver: Request failed with status 500 due to unknown error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/usr/lib/android-sdk/platform-tools/adb -P 5038 -s 10.10.1.5\\:5555 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0 2023-05-12T02:31:45.679Z ERROR webdriver: unknown error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/usr/lib/android-sdk/platform-tools/adb -P 5038 -s 10.10.1.5\\:5555 shell getprop ro.build.version.sdk' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at getErrorFromResponseBody (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:198:12)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at NodeJSRequest._request (/home/avatar/mbanking-automation/node_modules/webdriver/build/request/index.js:166:60)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at async startWebDriverSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/utils.js:68:20)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at async WebDriver.newSession (/home/avatar/mbanking-automation/node_modules/webdriver/build/index.js:46:45)\cf1\highlight2 
+\par \cf8\highlight0 0|mBanking  | \cf0     at async remote (/home/avatar/mbanking-automation/node_modules/webdriverio/build/index.js:78:22)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 sudo lsof -t -i:25122\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ===================PID=========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stdout:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stderr:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 exec error: Error: Command failed: sudo lsof -t -i:25122\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.165:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.129:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 24 | 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ===================KILL PORT=========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error: Command failed: sudo lsof -t -i:25122\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess.exithandler (node:child_process:419:12)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess.emit (node:events:513:28)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess.emit (node:domain:489:12)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at maybeClose (node:internal/child_process:1091:16)\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0     at ChildProcess._handle.onexit (node:internal/child_process:302:5) \{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   code: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   killed: false,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   signal: null,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   cmd: 'sudo lsof -t -i:25122'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Removing UiAutomator2 AdbPort 5038\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Success Register BCA Account 10.10.1.210:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.210:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.129:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.92:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.210:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.129:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.18:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.48:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.0.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.54:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 455.961,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 29 | 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.33:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.1.173:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 32 | 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.35:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.100:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.78:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.18:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 28 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 31 | 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.165:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.65:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 32 | 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 16 | 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 20 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.84:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.165:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.120:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 13 | 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 20 | 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 24 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.7:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.165:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 37 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.120:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.170:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 22 | 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 3 | 10.10.2.33:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.65:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.38:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.33:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.165:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 43 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.75:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 1 | 10.10.0.54:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.1.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 429.217,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.54:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.18:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.74:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.0.238:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 50 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Success Register BCA Account 10.10.1.177:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.177:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.177:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.18:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error BRI 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 device forced close, please try again #LGN001\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 7 | 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.1.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 56 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error BRI 10.10.1.100:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 device forced close, please try again #LGN001\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 25 | 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.18:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 37 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.1.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.1.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.170:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 59 | 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 4 | 10.10.1.65:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 38 | 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.16:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 4 | 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.65:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 5 | 10.10.1.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.97:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.74:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Balance 10.10.0.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 263.000,00\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.133:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Gagal Transfer BCA Device 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Target account not registered\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '0263343449',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 2,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Target account not registered'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 17 | 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 28 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Check Mutation 10.10.0.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.162:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 --------------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Get Mutation 10.10.0.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Logout BRI 10.10.0.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Gagal Transfer BCA Device 10.10.1.175:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Target account not registered\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.105:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 37 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 32 | 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Register BCA Account 10.10.1.212:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ==========================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 43 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 37 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.99:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.55:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 50 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success BCA 10.10.1.173:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.1.173:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '1230959681',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 43 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.74:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.139:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 52 | 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.170:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 30 | 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 48 | 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 37 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.99:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.173:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Success BCA 10.10.0.238:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.0.238:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '6460436191',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 1,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Transfer Success'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.74:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.59:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 34 | 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.34:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.85:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 44 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BRI 10.10.1.9:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.132:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.1.170:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.161:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 17 | 10.10.0.74:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.1.177:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 45 | 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 -----------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.238:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.40:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 18 | 10.10.1.170:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer BCA  10.10.1.210:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.74:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.79:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.27:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.2:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.170:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 23 | 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 15 | 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.0.139:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 4 | 10.10.1.99:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 14 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.99:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.69:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 16 | 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.2.40:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 27 | 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.32:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.140:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 20 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 21 | 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 23 | 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.77:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.2.31:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.66:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.0.58:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.2.117:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 24 | 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 29 | 10.10.1.167:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login BCA  10.10.1.206:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Error BRI 10.10.1.34:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 device forced close, please try again #LGN001\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Mutasi Mandiri 10.10.1.15:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Gagal Transfer BCA Device 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Authorize Timeout\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Transfer Callback 10.10.1.199:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ========================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\{\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   bank: 'bca',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   target_bank: 'BCA',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   account: '2740487348',\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   status: 2,\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0   message: 'Authorize Timeout'\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0\}\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Total New Current Mutation : 8 | 10.10.0.139:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stdout: failed to connect to '10.10.1.5:5555': Connection timed out\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 stderr:\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.0.225:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ---------------------------------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Login Mandiri 10.10.1.46:5555\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 ------- PAGE SOURCE PODO --------\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 =============================================\cf1\highlight2 
+\par \cf9\highlight0 0|mBanking  | \cf0 Delete Session 10.10.1.167:5555\cf1\highlight2 
+\par \pard\cf0\highlight0\f2\fs16 
+\par }
+ 
