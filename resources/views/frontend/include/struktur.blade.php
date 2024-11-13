@@ -3,7 +3,14 @@
 @include('frontend.include.header')
 
 <div class="container">
-    <h1>Struktur Organisasi I-KATA 2024</h1>
+    <div class="header d-flex align-items-center justify-content-center">
+        <div class="logo me-2">
+            <a href="#">
+                <img src="{{ asset('assets/img/logo/logo_real.ico') }}" alt="">
+            </a>
+        </div>
+        <h1>Struktur Organisasi I-KATA 2024</h1>
+    </div>
 
     <div class="organization-chart">
         <!-- Level 1: CEO -->
