@@ -92,7 +92,7 @@
                                             <button type="submit" class="btn btn-primary">
                                                 {{ __('Login') }}
                                             </button>
-                                            <button type="button" class="btn btn-secondary" onclick="showRegisterForm()">
+                                            <button type="button" class="btn btn-primary" onclick="showRegisterForm()">
                                                 {{ __('Register') }}
                                             </button>
                                         </div>
@@ -156,9 +156,12 @@
                                             </div>
                                         </div>
                                         <div class="row mb-0">
-                                            <div class="col-md-6 offset-md-4">
+                                            <div class="col-md-12 text-center">
                                                 <button type="submit" class="btn btn-primary">
                                                     {{ __('Register') }}
+                                                </button>
+                                                <button type="button" class="btn btn-primary" onclick="showLoginForm()">
+                                                    {{ __('Back to Login') }}
                                                 </button>
                                             </div>
                                         </div>

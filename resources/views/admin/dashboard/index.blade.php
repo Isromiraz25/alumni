@@ -83,6 +83,31 @@
                                 </a>
                             </div>
                         </div>
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">{{ $totalangkatan }}</div>
+                                            <div>Total Angkatan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left"></span></span>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                                             {{-- <body onLoad="initClock()">
 
                                                 <div id="timedate">

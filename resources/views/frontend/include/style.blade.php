@@ -117,7 +117,7 @@
 
 
 <style>
-    .header-bottom,
+.header-bottom,
 .header-sticky {
     background-color: green; /* Apply green background color */
 }
