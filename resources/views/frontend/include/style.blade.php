@@ -70,37 +70,7 @@
 
 </style>
 
-{{-- <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
 
-    th, td {
-        border: 1px solid #dddddd;
-        text-align: center;
-        padding: 8px;
-    }
-
-    th {
-        background-color: #f2f2f2;
-    }
-
-    tbody td:hover {
-        background-color: #e0e0e0;
-    }
-
-    .current-date {
-        background-color: #4CAF50;
-        color: white;
-        font-weight: bold;
-    }
-
-    calendar tbody td {
-        cursor: pointer;
-    }
-</style> --}}
 
 <style>
     .whates-img {
@@ -203,6 +173,3 @@
         }
     }
 </style>
-  {{--  style form pendaftaran siswa  --}}
-
-

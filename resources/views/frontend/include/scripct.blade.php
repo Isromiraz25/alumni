@@ -195,35 +195,7 @@
 
 
 
-<script>
-    $(".btn-show-siswa").click(function() {
-        var getId = $(this).data('id');
-        console.log(getId);
-        $.ajax({
-            url: "get-data-siswa/" + getId,
-            method: "GET",
-            dataType: "json",
-            success: function(data) {
-                $(".show-table tbody").empty();
-                $.each(data, function(index, siswa) {
-                    var row = "<tr>" +
-                        "<th scope='row'>" + (index + 1) + "</th>" +
-                            "<td>" + siswa.name + "</td>" +
-                            "<td>" + siswa.alamat + "</td>" +
-                            "<td>" + siswa.jenis_kelamin + "</td>" +
-                            "<td><img src='http://127.0.0.1:8000/" + siswa.photo + "' style='width:40px;'></td>" +
-                            "</tr>";
-                        "</tr>";
 
-                    $(".show-table tbody").append(row);
-
-                });
-                $('#showAllSiswa').modal('show');
-            }
-        });
-    });
-
-</script>
 
 
 

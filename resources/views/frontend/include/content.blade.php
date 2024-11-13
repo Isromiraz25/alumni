@@ -155,16 +155,15 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         @endforeach
-
-
-
-
-
                                     </div>
                                 </div>
-
+                            {{-- benner --}}
+                                <div class="col-lg-3">
+                                    <div class="home-banner2 d-none d-lg-block">
+                                        <img src="assets/img/gallery/benner.jpg" alt="" style="height: 100px; width: 450%; object-fit: cover;">
+                                    </div>
+                                </div>
 
                                 <!-- Card two -->
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -462,7 +461,7 @@
                         @foreach ($datayoutube as $item )
                         <div class="single-video">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/{{ $item->idyoutube }}?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/{{ $item->idyoutube }}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                             </div>
                             <div class="video-intro">
                                 <h4>{{ $item->deskripsi }}</h4>

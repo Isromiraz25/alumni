@@ -16,7 +16,7 @@ class FrontendController extends Controller
         $infosantri =  DB::table("infosantris")->take(6)->get();
         $dataangkatan =  DB::table("angkatan")->get();
         $dataguru =  DB::table("ust")->get();
-        $datayoutube =  DB::table("youtube")->get();
+        $datayoutube =  DB::table("youtube")->take(2)->get();
         $datasiswa =  DB::table("siswa")->get();
         // $datasarans =  DB::table("sarans")->get();
     return view("frontend.master",compact("dataalumni","datagallery","datamudir","infobursa","infoalumni","infosantri","dataangkatan","dataguru","datayoutube","datasiswa"));

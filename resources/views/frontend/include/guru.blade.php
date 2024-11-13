@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         
-                        <h2 class="text-center mb-4">Guru</h2>
+                        <h2 class="text-center mb-4">Teachers</h2>
 
                         <div class="slider-wrapper">
                             <!-- Slider -->

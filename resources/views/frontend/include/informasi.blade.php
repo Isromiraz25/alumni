@@ -135,7 +135,7 @@
 
                                                 <div class="whates-caption">
                                                     <div class="card border-primary mb-3" style="max-width: 18rem;">
-                                                        <div class="card-header">Inforasi</div>
+                                                        <div class="card-header">Informasi</div>
                                                         <div class="card-body text-primary">
                                                           <p class="card-text">adalah pesan (ucapan atau ekspresi) atau kumpulan pesan yang terdiri dari order sekuens dari simbol, atau makna yang dapat ditafsirkan dari pesan atau kumpulan pesan. Informasi dapat direkam atau ditransmisikan. Hal ini dapat dicatat sebagai tanda-tanda, atau sebagai sinyal berdasarkan gelombang. Informasi adalah jenis acara yang mempengaruhi suatu negara dari sistem dinamis.
                                                             Para konsep memiliki banyak arti lain dalam konteks yang berbeda</p>
@@ -144,16 +144,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
-
-
-
-
-
                                     </div>
                                 </div>
 
+
+                                 {{-- benner --}}
+                                 <div class="col-lg-3">
+                                    <div class="home-banner2 d-none d-lg-block">
+                                        <img src="assets/img/gallery/benner.jpg" alt="" style="height: 100px; width: 450%; object-fit: cover;">
+                                    </div>
+                                </div>
 
                                 <!-- Card two -->
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

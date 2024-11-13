@@ -34,7 +34,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/">Home</a></li>
-                                        <li><a href="frontalumni">Alumni</a></li>
+                                        <li><a href="frontalumni">Generation</a></li>
                                         <li><a href="frontgalerry">Gallery</a></li>
                                         <li><a href="frontguru">Teacher</a></li>
 

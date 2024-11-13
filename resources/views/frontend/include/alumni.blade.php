@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Title for Alumni Section -->
-                        <h2 class="text-center mb-4">Alumni</h2>
+                        <h2 class="text-center mb-4">Generation</h2>
 
                         <div class="slider-wrapper">
                             <!-- Slider -->

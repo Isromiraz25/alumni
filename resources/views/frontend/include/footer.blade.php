@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
                        <h5 class="text-white">create by Kosma</h5>
-                       <p class="text-white">January 13, 2024</p>
+                       <p class="text-white">{{ \Carbon\Carbon::now()->format('F j, Y') }}</p>
                        {{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#suggestionModal">
                         Pesan
                     </button> --}}
