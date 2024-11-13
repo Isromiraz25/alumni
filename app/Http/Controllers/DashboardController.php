@@ -11,7 +11,8 @@ class DashboardController extends Controller
     {
         $totalAlumni = DB::table('alumnis')->count();
         $totalsiswa = DB::table('siswa')->count();
-        return view('admin.dashboard.index',compact('totalAlumni','totalsiswa'));
+        $totalguru = DB::table('ust')->count();
+        return view('admin.dashboard.index',compact('totalAlumni','totalsiswa','totalguru'));
   
     }
  

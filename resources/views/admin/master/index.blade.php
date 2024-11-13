@@ -135,12 +135,12 @@
                                 <a href="{{ route('admin.youtube.index') }}" class="active"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a>
                             </li>
                     @else
-                <li>
+                    <li>
                     <a href="/home" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                </li>
-                <li>
+                    </li>
+                    <li>
                     <a href="{{ route('admin.dataalumni.alumni') }}" class="active"><i class="fa fa-database" aria-hidden="true"></i> Data Alumni</a>
-                </li>
+                   </li>
   
 @endif
 
