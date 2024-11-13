@@ -100,57 +100,50 @@
                             </div>
 
                         </li>
-                        @if(auth()->user()->role == 'user')
-                        <li>
-                            <a href="/home" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.dataalumni.alumni') }}" class="active"><i class="fa fa-database" aria-hidden="true"></i> Data Alumni</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.saran.index') }}" class="active"><i class="fa fa-user-plus" aria-hidden="true"></i> Saran</a>
-                        </li>
-                        @else
-                        <li>
-                            <a href="/home" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-
-                        <li>
-                            <a href="{{ route('admin.dataalumni.alumni') }}" class="active"><i class="fa fa-database" aria-hidden="true"></i> Data Alumni</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.gallery.gallery') }}" class="active"><i class="fa fa-book" aria-hidden="true"></i> Galerry Kegiatan</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.mudir.mudir') }}" class="active"><i class="fa fa-male" aria-hidden="true"> Data Mudir</i> </a>
+                        @if(auth()->user()->role == 'admin')
+                            <li>
+                                <a href="/home" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                             </li>
-                        <li>
-                        <li>
-                                <a href="{{ route('admin.ust.ust') }}" class="active"><i class="fa fa-male" aria-hidden="true"> Data Guru</i> </a>
-                                </li>
-                        <li>
-                        <a href="{{ route('admin.work.work') }}" class="active"><i class="fa fa-info-circle" aria-hidden="true"></i> Informasi BursaKerja</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.infoalumni.infoalumni') }}" class="active"><i class="fa fa-info-circle" aria-hidden="true"></i> Informasi Alumni</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.infosantri.infosantri') }}" class="active"><i class="fa fa-info-circle" aria-hidden="true"></i> Informasi Santri</a>
-                        </li>
-                    <li>
-                        <a href="{{ route('admin.tambahangkatan.angkatan') }}" class="active"><i class="fa fa-users" aria-hidden="true"></i> Tambah Angkatan</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('admin.siswa.siswa') }}" class="active"><i class="fa fa-users" aria-hidden="true"></i> Siswa Baru</a>
-                    </li>
-                    {{-- <li>
-                        <a href="{{ route('admin.saran.index') }}" class="active"><i class="fa fa-envelope" aria-hidden="true"></i> Saran</a>
-                    </li> --}}
+                            <li>
+                                <a href="{{ route('admin.dataalumni.alumni') }}" class="active"><i class="fa fa-database" aria-hidden="true"></i> Data Alumni</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.gallery.gallery') }}" class="active"><i class="fa fa-book" aria-hidden="true"></i> Galeri Kegiatan</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.mudir.mudir') }}" class="active"><i class="fa fa-male" aria-hidden="true"></i> Data Mudir</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.ust.ust') }}" class="active"><i class="fa fa-male" aria-hidden="true"></i> Data Guru</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.work.work') }}" class="active"><i class="fa fa-info-circle" aria-hidden="true"></i> Informasi Bursa Kerja</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.infoalumni.infoalumni') }}" class="active"><i class="fa fa-info-circle" aria-hidden="true"></i> Informasi Alumni</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.infosantri.infosantri') }}" class="active"><i class="fa fa-info-circle" aria-hidden="true"></i> Informasi Santri</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.tambahangkatan.angkatan') }}" class="active"><i class="fa fa-users" aria-hidden="true"></i> Tambah Angkatan</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.siswa.siswa') }}" class="active"><i class="fa fa-users" aria-hidden="true"></i> Siswa Baru</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.youtube.index') }}" class="active"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a>
+                            </li>
+                    @else
+                <li>
+                    <a href="/home" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="{{ route('admin.dataalumni.alumni') }}" class="active"><i class="fa fa-database" aria-hidden="true"></i> Data Alumni</a>
+                </li>
+  
+@endif
 
-                    <li>
-                        <a href="{{ route('admin.youtube.index') }}" class="active"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
-                    </li>
-                        @endif
 
                     </ul>
                 </div>

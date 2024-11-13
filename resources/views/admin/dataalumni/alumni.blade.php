@@ -4,8 +4,9 @@
 <br>
 <h1>Data Alumni</h1>
 <a href="{{ route('admin.alumni.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Tambah Alumni</a>
+@if(auth()->user()->role == 'admin')
 <a href="{{ route('exportalumni') }}" class="btn btn-danger"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-
+@endif
 <table class="table" id="myTable">
     <thead>
       <tr>
@@ -18,7 +19,7 @@
         <th scope="col">Tahun_lulus</th>
         <th scope="col">Alamat</th>
         <th scope="col">Photo</th>
-        <th scope="col">Aksi</th>
+        <th scope="col">Aksi</th> <!-- Always include the "Aksi" column in the header -->
       </tr>
     </thead>
     <tbody>
@@ -28,18 +29,17 @@
         @foreach ($alumnis as $item)
         <tr>
             <th scope="row">{{ $no++ }}</th>
-            <th scope="col">{{ $item->nama }}</th>
-            <th scope="col">{{ $item->agama }}</th>
-            <th scope="col">{{ $item->jenis_kelamin }}</th>
-            <th scope="col">{{ $item->angkatan }} - {{ $item->nama_angkatan }}</th>
-            <th scope="col">{{ $item->no_tlp }}</th>
-            <th scope="col">{{ $item->tahun_lulus }}</th>
-            <th scope="col">{{ $item->alamat }}</th>
-            <!-- <th scope="col">{{ $item->photo }}</th> -->
-            <th>
+            <td>{{ $item->nama }}</td>
+            <td>{{ $item->agama }}</td>
+            <td>{{ $item->jenis_kelamin }}</td>
+            <td>{{ $item->angkatan }} - {{ $item->nama_angkatan }}</td>
+            <td>{{ $item->no_tlp }}</td>
+            <td>{{ $item->tahun_lulus }}</td>
+            <td>{{ $item->alamat }}</td>
+            <td>
                 <img src="{{ asset($item->photo) }}" alt="" style="width: 40px;">
-            </th>
-            <th>
+            </td>
+            <td>
                 @if(auth()->user()->role == 'admin')
                 <a href="{{ route('admin.alumni.editalumni',[$item->id]) }}">
                     <button type="submit" class="btn btn-primary btn-sm" onclick="return confirm('Are you sure you want to Edit this item?')">
@@ -51,13 +51,14 @@
                         <i class="fa fa-trash" aria-hidden="true"></i> Delete
                     </button>
                 </a>
+                @else
+                <span>No action available</span> <!-- For non-admin users, show a placeholder -->
                 @endif
-            </th>
-          </tr>
+            </td>
+        </tr>
         @endforeach
-
-
     </tbody>
-  </table>
-  {{--  {{ $alumnis->links() }}  --}}
+</table>
+
+{{--  {{ $alumnis->links() }}  --}}
 @endsection
