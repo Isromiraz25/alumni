@@ -151,10 +151,6 @@
 
 
 <style>
-    .container {
-    text-align: center;
-    margin-top: 20px;
-}
 
 .organization-chart {
     display: flex;
