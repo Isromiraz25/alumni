@@ -144,6 +144,8 @@ Route::get('/frontinformasi', [App\Http\Controllers\TemplateinformasiController:
 Route::get('/frontyoutube', [App\Http\Controllers\TempletYoutubeController::class, 'frontyoutube'])->name('frontend.include.youtube');
 Route::get('/frontsarans', [App\Http\Controllers\TempletSaranController::class, 'frontsarans'])->name('frontend.include.sarans');
 
+Route::get('/frontstruktur', [App\Http\Controllers\TempletStrukturController::class, 'frontstruktur'])->name('frontend.include.struktur');
+
 
 
 Route::get('/frontguru', [App\Http\Controllers\TempletguruController::class, 'frontguru'])->name('frontend.include.guru');

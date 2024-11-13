@@ -119,12 +119,12 @@
 <style>
 .header-bottom,
 .header-sticky {
-    background-color: green; /* Apply green background color */
+    background-color: hsl(120, 91%, 32%); /* Apply green background color */
 }
 
 .header-bottom .container,
 .header-sticky .container {
-    background-color: green; /* Ensure container matches background */
+    background-color: hsl(120, 91%, 32%); /* Ensure container matches background */
 }
 
 
@@ -151,25 +151,47 @@
 
 
 <style>
-    .video-wrapper {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-    }
-    
-    .video-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    @media (max-width: 768px) {
-        .col-lg-3 {
-            width: 100%;
-        }
-    }
+    .container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.organization-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Beri jarak antara setiap level */
+}
+
+.position {
+    text-align: center;
+    margin: 0 10px; /* Beri jarak antar posisi di level yang sama */
+    padding: 10px; /* Tambahkan padding di dalam posisi */
+    border: 1px solid #ddd; /* Tambahkan border agar terlihat seperti kotak */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.level::after {
+    display: none;
+}
+
+.position::after {
+    display: none; /* Menyembunyikan garis vertikal */
+
+}
+
+.level:first-child::after {
+    display: none;
+}
+
+.level:nth-child(2) .position::after,
+.level:nth-child(2) .position:nth-child(1)::after {
+    display: none;
+}
+
 </style>
