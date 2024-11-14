@@ -46,37 +46,47 @@
                                 <div class="tab-content" id="nav-tabContent">
                                     <!-- card one -->
                                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                        aria-labelledby="nav-home-tab">
-                                        <div class="row">
-                                            <!-- Left Details Caption -->
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="row">
+                                        <!-- Left Details Caption -->
 
+                                        @foreach ($datamudir as $item)
+                                            <div class="col-xl-6 col-lg-12">
+                                                <div class="whats-news-single mb-40 mb-40">
 
+                                                    <div class="whates-img">
+                                                        <img src="{{ asset($item->photo) }}" alt=""
+                                                            width="500" height="450">
+                                                    </div>
 
+                                                    <div class="whates-caption">
+                                                        <h7>Pimpinan Ponpes Taffriijul ahkam - almunajat</h7>
+                                                        <h4><a href="#">{{ $item->nama }}</a></h4>
+
+                                                        {{ $item->tempat_lahir }}
+                                                        {{ $item->tanggal_lahir }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Right single caption -->
 
                                             <div class="col-xl-6 col-lg-12">
                                                 <div class="whats-news-single mb-40 mb-40">
 
                                                     <div class="whates-caption">
-                                                        <div class="card border-primary mb-3" style="max-width: 18rem;">
-                                                            <div class="card-header">Informasi</div>
+                                                        <div class="card border-primary mb-3"
+                                                            style="max-width: 18rem;">
+                                                            <div class="card-header">Wasiat</div>
                                                             <div class="card-body text-primary">
-                                                                <p class="card-text">adalah pesan (ucapan atau ekspresi)
-                                                                    atau kumpulan pesan yang terdiri dari order sekuens
-                                                                    dari simbol, atau makna yang dapat ditafsirkan dari
-                                                                    pesan atau kumpulan pesan. Informasi dapat direkam
-                                                                    atau ditransmisikan. Hal ini dapat dicatat sebagai
-                                                                    tanda-tanda, atau sebagai sinyal berdasarkan
-                                                                    gelombang. Informasi adalah jenis acara yang
-                                                                    mempengaruhi suatu negara dari sistem dinamis.
-                                                                    Para konsep memiliki banyak arti lain dalam konteks
-                                                                    yang berbeda</p>
+                                                                <p class="card-text">{{ $item->wasiat }}</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        @endforeach
                                     </div>
+                                </div>
 
 
                                     {{-- benner --}}
