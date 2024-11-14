@@ -107,6 +107,16 @@ Route::post('/updatesiswa/{id}', [App\Http\Controllers\SiswaController::class, '
 Route::get('/deletesiswa/{id}', [App\Http\Controllers\SiswaController::class, 'deletesiswa'])->name('admin.siswa.deletesiswa');
 
 
+Route::get('/struktur', [App\Http\Controllers\StrukturController::class, 'index'])->name('admin.struktur.index');
+Route::get('/struktur/create', [App\Http\Controllers\StrukturController::class, 'create'])->name('admin.struktur.create');
+Route::post('/struktur/store', [App\Http\Controllers\StrukturController::class, 'store'])->name('admin.struktur.store');
+Route::get('/editstruktur/{id}', [App\Http\Controllers\StrukturController::class, 'editstruktur'])->name('admin.struktur.editstruktur');
+Route::post('/updatestruktur/{id}', [App\Http\Controllers\StrukturController::class, 'updatestruktur'])->name('admin.struktur.updatestruktur');
+Route::get('/deletestruktur/{id}', [App\Http\Controllers\StrukturController::class, 'deletestruktur'])->name('admin.struktur.deletestruktur');
+
+
+
+
 
 Route::get('/saran', [App\Http\Controllers\SaranController::class, 'index'])->name('admin.saran.index');
 Route::get('/saran/create', [App\Http\Controllers\SaranController::class, 'create'])->name('admin.saran.create');

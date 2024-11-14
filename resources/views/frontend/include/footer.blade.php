@@ -28,19 +28,8 @@
   
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-              <p>
-                <a class="text-white">MDBootstrap</a>
-              </p>
-              <p>
-                <a class="text-white">MDWordPress</a>
-              </p>
-              <p>
-                <a class="text-white">BrandFlow</a>
-              </p>
-              <p>
-                <a class="text-white">Bootstrap Angular</a>
-              </p>
+              <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+             
             </div>
             <!-- Grid column -->
   
@@ -52,10 +41,10 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <p class="text-white"><i class="fas fa-home mr-3 "></i> New York, NY 10012, US</p>
+              <p class="text-white"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+              <p class="text-white"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p class="text-white"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
             </div>
             <!-- Grid column -->
   

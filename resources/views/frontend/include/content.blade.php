@@ -170,16 +170,12 @@
                                         </div>
                                     </div>
                                     {{-- benner --}}
-                                    <div class="col-lg-3">
-                                        <div class="home-banner2 d-none d-lg-block">
-                                            <img src="assets/img/gallery/benner.jpg" alt=""
-                                                style="height: 100px; width: 450%; object-fit: cover;">
-                                        </div>
-                                    </div>
+                                  
 
                                     <!-- Card two -->
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                                         aria-labelledby="nav-profile-tab">
+                                        <br>
                                         @foreach ($infobursa as $item)
                                             <div class="card mb-3 mx-auto" style="max-width: 600px;">
                                                 <div class="row g-0">
@@ -200,11 +196,11 @@
                                                 </div>
                                             </div>
                                         @endforeach
+                                    </div>
+                                    {{--  <div class="row">  --}}
 
-                                        {{--  <div class="row">  --}}
-
-                                        <!-- Left Details Caption -->
-                                        {{--  @foreach ($datawork as $item)
+                                    <!-- Left Details Caption -->
+                                    {{--  @foreach ($datawork as $item)
                                         <div class="col-xl-6">
                                             <div class="whats-news-single mb-40">
                                                 <div class="whates-img">
@@ -230,14 +226,14 @@
                                             </div>
                                         </div>
                                         @endforeach  --}}
-                                        <!-- Right single caption -->
+                                    <!-- Right single caption -->
 
 
-                                        {{--  <div class="col-xl-6 col-lg-12">
+                                    {{--  <div class="col-xl-6 col-lg-12">
                                             <div class="row">  --}}
-                                        <!-- single -->
+                                    <!-- single -->
 
-                                        {{--  <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                    {{--  <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
                                                     <div class="whats-right-single mb-20">
                                                         <div class="whats-right-img">
                                                             <img src="{{ asset($item->photo) }}" alt="">
@@ -251,20 +247,28 @@
 
                                                     </div>
                                                 </div>  --}}
-                                    </div>
+
 
 
 
 
                                     <!-- Card three -->
+
+
+                                    {{-- infoalumni --}}
+
+
+
+
                                     <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                         aria-labelledby="nav-contact-tab">
+                                        <br>
                                         @foreach ($infoalumni as $item)
                                             <div class="row row-cols-1 row-cols-md-2 g-4">
                                                 <div class="col-5">
                                                     <div class="card">
                                                         <img src="{{ asset($item->photo) }}" class="card-img-top"
-                                                            alt="" width="600" height="100">
+                                                            alt="" width="700" height="200">
                                                     </div>
                                                 </div>
 
@@ -298,20 +302,32 @@
 
                                     <div class="tab-pane fade" id="nav-last" role="tabpanel"
                                         aria-labelledby="nav-last-tab">
+                                        <br>
                                         <div class="row">
                                             <!-- Left Details Caption -->
+                                           
                                             @foreach ($infosantri as $item)
-                                                <div class="card mb-3">
-                                                    <img src="{{ asset($item->photo) }}" class="card-img-top"
-                                                        alt="..." width="200px" height="200px">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">{{ $item->judul }}</h5>
-                                                        <p class="card-text">{{ $item->deskripsi }}</p>
-                                                        <p class="card-text"><small
-                                                                class="text-body-secondary">{{ $item->tanggal }}</small>
-                                                        </p>
+
+
+                                            <div class="card mb-3 mx-auto" style="max-width: 600px;">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4">
+                                                        <img src="{{ asset($item->photo) }}"
+                                                            class="img-fluid rounded-start" alt="...">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">{{ $item->judul }}</h5>
+                                                            <p class="card-text">{{ $item->deskripsi }}</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">{{ $item->tanggal }}</small>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                            </div>
+
+                                               
                                             @endforeach
                                             <!-- Right single caption -->
 
@@ -325,7 +341,12 @@
                         </div>
                     </div>
                     <!-- Banner -->
-
+                    <div class="col-lg-3">
+                        <div class="home-banner2 d-none d-lg-block">
+                            <img src="assets/img/gallery/benner.jpg" alt=""
+                                style="height: 100px; width: 450%; object-fit: cover;">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <!-- Flow Socail -->
