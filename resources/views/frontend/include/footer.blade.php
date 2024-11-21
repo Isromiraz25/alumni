@@ -17,9 +17,10 @@
                 Organisation
               </h6>
               <p class="text-white">
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                I-KATA <p class="text-white">
+                  Ikatan Keluarga Besar Tafriijul Ahkam
+                </p>
+                
               </p>
             </div>
             <!-- Grid column -->
@@ -41,10 +42,10 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p class="text-white"><i class="fas fa-home mr-3 "></i> New York, NY 10012, US</p>
-              <p class="text-white"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-              <p class="text-white"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p class="text-white"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <p class="text-white"><i class="fas fa-home mr-3 "></i> I-KATA</p>
+              <p class="text-white"><i class="fas fa-envelope mr-3"></i> ikata@gmail.com</p>
+              <p class="text-white"><i class="fas fa-phone mr-3"></i> 081528209883</p>
+             
             </div>
             <!-- Grid column -->
   

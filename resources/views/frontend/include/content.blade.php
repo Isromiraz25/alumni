@@ -170,7 +170,7 @@
                                         </div>
                                     </div>
                                     {{-- benner --}}
-                                  
+
 
                                     <!-- Card two -->
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel"
@@ -305,29 +305,25 @@
                                         <br>
                                         <div class="row">
                                             <!-- Left Details Caption -->
-                                           
+
                                             @foreach ($infosantri as $item)
-
-
-                                            <div class="card mb-3 mx-auto" style="max-width: 600px;">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="{{ asset($item->photo) }}"
-                                                            class="img-fluid rounded-start" alt="...">
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">{{ $item->judul }}</h5>
-                                                            <p class="card-text">{{ $item->deskripsi }}</p>
-                                                            <p class="card-text"><small
-                                                                    class="text-body-secondary">{{ $item->tanggal }}</small>
-                                                            </p>
+                                                <div class="card mb-3 mx-auto" style="max-width: 600px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-4">
+                                                            <img src="{{ asset($item->photo) }}"
+                                                                class="img-fluid rounded-start" alt="...">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">{{ $item->judul }}</h5>
+                                                                <p class="card-text">{{ $item->deskripsi }}</p>
+                                                                <p class="card-text"><small
+                                                                        class="text-body-secondary">{{ $item->tanggal }}</small>
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                               
                                             @endforeach
                                             <!-- Right single caption -->
 
