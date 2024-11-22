@@ -6,7 +6,7 @@
 <br>
 <h1>Data Galerry</h1>
 <a href="{{ route('admin.gallery.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Galerry</a>
-<table class="table">
+<table class="table" id="galerry"> 
     <thead>
       <tr>
         <th scope="col">No</th>

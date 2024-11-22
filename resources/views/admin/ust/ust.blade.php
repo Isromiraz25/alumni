@@ -4,7 +4,7 @@
 <br>
 <h1>Data Guru</h1>
 <a href="{{ route('admin.ust.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Tambah Data</a>
-<table class="table">
+<table class="table" id="guru">
     <thead>
       <tr>
         <th scope="col">No</th>

@@ -4,7 +4,7 @@
 <br>
 <h1>Data Informasi Bursakerja</h1>
 <a href="{{ route('admin.work.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Info Bursakerja</a>
-<table class="table">
+<table class="table" id="work">
     <thead>
       <tr>
         <th scope="col">No</th>

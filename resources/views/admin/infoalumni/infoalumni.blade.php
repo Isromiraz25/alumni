@@ -5,7 +5,7 @@
 <br>
 <h1>Data Informasi Alumni</h1>
 <a href="{{ route('admin.infoalumni.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Info Alumni</a>
-<table class="table">
+<table class="table" id="alumni">
     <thead>
       <tr>
         <th scope="col">No</th>

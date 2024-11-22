@@ -4,7 +4,7 @@
 <br>
 <h1>Data Nama Angkatan</h1>
 <a href="{{ route('admin.tambahangkatan.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Angkatan</a>
-<table class="table">
+<table class="table" id="angkatan">
     <thead>
       <tr>
         <th scope="col">No</th>

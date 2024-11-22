@@ -238,4 +238,70 @@
     });
 </script>
 
+
+
+<script>
+    $(document).ready(function() {
+        $('#galerry').DataTable();
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#guru').DataTable();
+    });
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('#siswa').DataTable();
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#struktur').DataTable();
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#angkatan').DataTable();
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#work').DataTable();
+    });
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('#youtube').DataTable();
+    });
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('#santri').DataTable();
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#alumni').DataTable();
+    });
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('#mudir').DataTable();
+    });
+</script>
+
 </html>

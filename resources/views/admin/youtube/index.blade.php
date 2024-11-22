@@ -5,7 +5,7 @@
 <br>
 <h1>Data Youtube</h1>
 <a href="{{ route('admin.youtube.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Tambah ID Youtube</a>
-<table class="table">
+<table class="table" id="youtube">
     <thead>
       <tr>
         <th scope="col">No</th>

@@ -5,7 +5,7 @@
 <br>
 <h1>Data Informasi Santri</h1>
 <a href="{{ route('admin.infosantri.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Info Santri</a>
-<table class="table">
+<table class="table" id="santri">
     <thead>
       <tr>
         <th scope="col">No</th>

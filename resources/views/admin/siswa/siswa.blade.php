@@ -4,7 +4,7 @@
 <br>
 <h1>Data Siswa Baru</h1>
 <a href="{{ route('admin.siswa.create') }}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Tambah Data</a>
-<table class="table">
+<table class="table" id="siswa">
     <thead>
       <tr>
         <th scope="col">No</th>
